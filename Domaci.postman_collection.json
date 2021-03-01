@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "71257941-1888-476c-9be3-98e0beb5d12b",
+		"name": "Domaci",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Prvi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"milena\",\r\n    \"job\": \"student\"\r\n}"
+				},
+				"url": {
+					"raw": "{{sajt}}/api/users",
+					"host": [
+						"{{sajt}}"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Drugi",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://www.booking.com/index.html?aid=343348&label=operasoft-sdO15-343348&utm_source=Opera&utm_medium=web&utm_campaign=sdO15",
+					"protocol": "https",
+					"host": [
+						"www",
+						"booking",
+						"com"
+					],
+					"path": [
+						"index.html"
+					],
+					"query": [
+						{
+							"key": "aid",
+							"value": "343348"
+						},
+						{
+							"key": "label",
+							"value": "operasoft-sdO15-343348"
+						},
+						{
+							"key": "utm_source",
+							"value": "Opera"
+						},
+						{
+							"key": "utm_medium",
+							"value": "web"
+						},
+						{
+							"key": "utm_campaign",
+							"value": "sdO15"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "cde8ba30-984c-46b7-86f1-2d4ebea30fdc",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "42a62fac-e484-4c0c-a3a3-c12fdb0cee08",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "e27fe358-ec88-472b-bf19-da746aa3570f",
+			"key": "sajt",
+			"value": "https://reqres.in",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
